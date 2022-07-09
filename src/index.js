@@ -39,13 +39,19 @@ app.use("/public", express.static("public"));
 app.use(
   session({
     secret: "logeo",
-    resave: false,
+    resave: true,
+    rolling: true,
     saveUninitialized: false,
     store: MongoStore.create({
       mongoUrl: `${process.env.URI_SESSION}`,
       mongoOptions: advanceOptions,
       ttl: 600,
     }),
+    cookie: {
+      httpOnly: false,
+      secure: false,
+      maxAge: 600000,
+    },
   })
 );
 app.use(passport.initialize()); //iniciar passport y sesion passport
