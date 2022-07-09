@@ -1,0 +1,21 @@
+<%-include('./partials/header.ejs')%>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Hasta luego <span class="text-logout"><%=nombre%></span></h1>
+            </div>
+        </div>
+    </div>
+
+    <script>   // redireccionar a pagina de login luego de mostrar mensaje de Hasta Luego
+        setTimeout(()=>{
+            fetch('http://localhost:8080/logout',{
+                method:'post'
+            })
+            .then(()=>location.href='/login')
+            .catch(()=>console.log('Error al redireccionar'))
+        },2000);
+    </script>
+</body>
+</html>

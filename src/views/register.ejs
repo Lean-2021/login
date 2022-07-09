@@ -1,0 +1,23 @@
+<%-include('./partials/header')%>
+<body>
+    <section class="container mt-5">   <!--Formulario de Resgistro-->
+        <div class="row">
+            <div class="col-md-4 offset-md-4 text-center">
+                <h2>Usuario Nuevo</h2>
+                <form action="/register"method="post"class="form-login-container mt-5">
+                    <label for="nombre"class="form-label">Nombre</label>
+                    <input type="text"placeholder="Ingrese el nombre"class="form-control text-center"id="nombre"name="nombre"required>
+                    <label for="email" class="form-label mt-3">Email</label>
+                    <input type="text"placeholder="Ingrese el email" id="email"name="email"required class="form-control text-center"autocomplete="off">
+                    <label for="password"class="form-label mt-3">Contraseña</label>
+                    <input type="password"class="form-control text-center"placeholder="Ingrese la contraseña"id="password"name="password"required>
+                    <section class="mt-3">
+                        <button class="btn btn-primary btn-login">Crear Usuario</button>
+                        <button type="button" class="mt-3 btn btn-warning btn-register"onClick="location.href='/login'">Login</button>
+                    </section>
+                </form>
+            </div>  
+        </div>
+    </section>
+</body>
+</html>

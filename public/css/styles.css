@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+body {
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.form-title {
+    /*titulo del formulario de ingreso de productos*/
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form-style {
+    /*estilo del formulario de ingreso */
+    background-color: rgb(178, 205, 245);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 3px 1px grey;
+    font-weight: bold;
+}
+
+.form-style .form-input {
+    /*estilo inputs de ingreso*/
+    width: 70%;
+    margin: auto;
+    background-color: cornsilk;
+    text-align: center;
+    box-shadow: 1px 1px 2px 1px black;
+ }
+
+.form-style label {
+    /*estilos etiquetas formulario*/
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/*estilo de las tablas con contenido del producto*/
+.table-container {
+    border: 2px solid black;
+    background-color: rgb(243, 228, 203);
+}
+
+.table-head {
+    background-color: rgb(142, 239, 239);
+}
+
+.table-description {
+    vertical-align: middle;
+}
+.table-image{
+    object-fit:fill;
+}
+/* estilos del chat de mensajes */
+
+.chat-container{
+    padding: 0;
+    background-color: rgb(178, 205, 245);
+}
+.chat-container label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#showMessage{   /* seccion de mensajes */
+    height:400px;
+    background-color: #E9E4F0;
+    overflow: auto;
+}
+/* input de mensajes */
+.message-input{
+  width:99%;
+}
+
+/* estilos texto email */
+.message-email{
+    color:blue;
+}
+/* estilos fecha y hora mensajes */
+.message-dateTime{
+    color:brown;
+}
+/* estilos mensajes */
+.message{
+    color:green;
+}
+/* imagen del autor */
+
+.message-avatar{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* estilos menu login */
+.form-login-container{ /*contenedor formulario login*/
+    border:2px solid blue; 
+    padding:30px;
+    padding-top:15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px grey;
+    background-color: lightblue;
+}
+.form-login-container label{  /*etiqueta label de formulario*/
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-login, .btn-register{/*estilo boton formulario login */
+    margin-top:10px;
+    width:100%
+}
+.label-usuario{ /*etiqueta usuario nuevo*/
+    margin-top: 20px;
+    margin-bottom:-30px;
+}
+
+.container-bienvenido{   /*estilo texto de bienvenida*/
+    background-color: antiquewhite;
+    box-shadow: 2px 0 4px 1px black;
+}
+.section-bienvenido{
+    padding:.5em;
+}
+.section-bienvenido h1{  /*fuente titulo de bienvenida*/
+    font-family: 'Patua One', cursive;
+}
+.name-bienvenido{  /*texto nombre bienvenido*/
+    color:blue;
+    text-transform: capitalize;
+    align-self: center;
+}
+.email-bienvenido{  /*estilo email home - bienvenido*/
+    color:grey;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.btn-salir{  /*botón salir*/
+    height: 40px;
+    align-self: center;
+}
+.text-logout{  /*texto logout*/
+    color:blue;
+    text-transform: capitalize;
+}
+
+/* estilos paginas de error login - registro */
+
+.error-image{
+    width:140px;
+    height: 140px;
+}
+.error-description{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.error-title{
+    color:red;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    margin-top:30px;
+}
+.btn-error{
+    width:200px;
+    font-weight: bold;
+    height: 50px;
+    background-color:orange;
+}

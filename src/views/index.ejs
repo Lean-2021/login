@@ -1,0 +1,24 @@
+<%- include('./partials/header')%>
+    <!--incluir encabezado-->
+
+    <body>
+        <div class="container-fluid container-bienvenido">
+            <div class="row section-bienvenido">
+                <div class="col-m-12 d-flex justify-content-between">
+                    <h1>Bienvenido <span class="ms-1 name-bienvenido"><%=nombre%></span></h1> 
+                    <span><span class="email-bienvenido"><%=email%></span><button class="btn btn-danger mt-2 btn-salir"id="btnLogout">Salir</button></span>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-5">
+            <%-include('./partials/products.ejs') %> <!--Mostrar la lista de productos con products.ejs-->
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <%- include('./partials/formProduct')%><!--incluir formulario ingreso de productos -->
+                </div>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="../public/js/main.js"></script>
+    </body>
+    </html>
